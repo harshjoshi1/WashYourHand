@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.pcc.repeatinglocalnotifications.MainActivity">
+
+    <item
+        android:id="@+id/info"
+        android:enabled="true"
+        android:title=""
+        android:visible="true"
+        android:icon="@drawable/ic_info_black"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/widget"
+        android:enabled="true"
+        android:title=""
+        android:visible="true"
+        android:icon="@drawable/ic_widgets_black"
+        app:showAsAction="always" />
+
+<!--    <item-->
+<!--        android:id="@+id/switc"-->
+<!--        android:enabled="true"-->
+<!--        android:title="Reminder"-->
+<!--        android:visible="true"-->
+<!--        app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/switchId"
+        android:enabled="true"
+        android:title=""
+        android:visible="true"
+        app:actionLayout="@layout/show_protected_switch"
+        app:showAsAction="always" />
+</menu>

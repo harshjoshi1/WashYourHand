@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    tools:context=".WidgetInstruction">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="How to Add Widget:"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="1) On a Home screen, touch and hold an empty space."
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"/>
+
+
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:src="@drawable/widgetfirst"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="2) Tap Widgets Widgets."
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="15dp"
+
+            android:src="@drawable/widgetsecond"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="3) If you have older version of device then (Touch and hold a widget. You’ll see images of your Home screens.) if you have latest vesion so you can directly click on application name of widget and you can show widget on your Screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:src="@drawable/widgetthird"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+
+            android:text="If You Want to Resize a widget:"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+<TextView
+    android:layout_marginTop="15dp"
+    android:textSize="16dp"
+    android:text="1) Touch and hold the widget on your Home screen."
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="2) Lift your finger. If the widget can be resized, you'll see an outline with dots on the sides."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="3) To resize the widget, drag the dots."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:text="4) When you're done, tap outside the widget."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>
+
+    <Button
+        android:id="@+id/continuetomain"
+        android:text="Continue"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/uhlPrompt"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>

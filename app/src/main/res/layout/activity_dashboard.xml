@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/layout_cancel"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26dp"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:text="You have set \n 0  minutes \n reminder to \n Wash your Hands"
+                    />
+
+            </LinearLayout>
+
+            <NumberPicker
+                android:id="@+id/np"
+                android:layout_marginStart="70dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:theme="@style/AppTheme.Picker"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_marginLeft="100dp" />
+
+        </LinearLayout>
+
+        <View
+            android:background="#7CFFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="250dp"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:id="@+id/wakeup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    android:text="Wake up    " />
+
+            </LinearLayout>
+
+            <TimePicker
+                android:id="@+id/simpleTimePicker"
+                android:layout_width="wrap_content"
+                android:theme="@style/AppTheme.Picker"
+                android:layout_height="150dp"
+                android:timePickerMode="spinner"/>
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginBottom="60dp"-->
+<!--            android:layout_marginStart="10dp"-->
+
+<!--            android:gravity="center"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_height="200dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/sleep"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    android:textSize="24dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="Sleep time"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <TimePicker-->
+<!--                android:id="@+id/simpleTime"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:theme="@style/AppTheme.Picker"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:timePickerMode="spinner"/>-->
+<!--        </LinearLayout>-->
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adview1"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8592398596825727/7391428064"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/navigation"
+        layout="@layout/element_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
+
